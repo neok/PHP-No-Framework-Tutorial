@@ -3,6 +3,7 @@ namespace Project\Params;
 
 /**
  * Class AbstractParams
+ * Reflection example
  *
  * @package Project\Params
  */

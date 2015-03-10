@@ -3,11 +3,6 @@ namespace Project\Controllers;
 
 use Http\Response;
 use Http\Request;
-use Project\Model\Service;
-use Project\Observer\Object;
-use Project\Observer\OBS;
-use Project\Observer\Subject;
-use Project\OtherShit\Body;
 use Project\Template\Renderer;
 
 /**
@@ -42,18 +37,12 @@ class Homepage
 	 * @param Request  $request
 	 * @param Response $response
 	 * @param Renderer $renderer
-	 * @param Service $service
 	 */
-	public function __construct(
-		Request $request,
-		Response $response,
-		Renderer $renderer,
-		Service $service)
+	public function __construct(Request $request, Response $response, Renderer $renderer)
 	{
 		$this->response = $response;
 		$this->request 	= $request;
 		$this->renderer = $renderer;
-		$this->service 	= $service;
 	}
 
 	/**
